@@ -177,18 +177,10 @@ Entregables:
 ### 100 nodos (Modelo Gn Dorogovtsev-Mendes)
 **n = 30, dirigido = False**
 
-[![DOROGVTSEV_100](/img/DOROGVTSEV_100.PNG)](https://www.youtube.com/watch?v=V8WMTf-rH1Y)
+[![DOROGVTSEV_100](/img/DOROGVTSEV_100.PNG)](https://www.youtube.com/watch?v=of-j_zOdstw)
 
->[Ver en YouTube](https://www.youtube.com/watch?v=V8WMTf-rH1Y)
-
-##
-
-### 500 nodos (Modelo Gn Dorogovtsev-Mendes)
-**n = 500, dirigido = False**
-
-[![DOROGVTSEV_500](/img/DOROGVTSEV_500.PNG)](https://www.youtube.com/watch?v=4jpaDqSRs9c)
-
->[Ver en YouTube](https://www.youtube.com/watch?v=4jpaDqSRs9c)
+>[Ver en YouTube](https://www.youtube.com/watch?v=of-j_zOdstw)
 
 ##
+
 ---
