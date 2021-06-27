@@ -100,22 +100,13 @@ Entregables:
 ### 100 nodos (Modelo Gn,p de Gilbert)
 **n = 100, p = 0.1, dirigido = False, auto=False**
 
-[![GILBERT_100](/img/GILBERT_100.PNG)](https://www.youtube.com/watch?v=8ASXGPjfktg)
+[![GILBERT_100](/img/GILBERT_100.PNG)](https://www.youtube.com/watch?v=jWXKS2jQCEc)
 
->[Ver en YouTube](https://www.youtube.com/watch?v=8ASXGPjfktg)
-
-
-##
-
-### 500 nodos (Modelo Gn,p de Gilbert)
-**n = 500, p = 0.1, dirigido = False, auto=False**
-
-[![GILBERT_500](/img/GILBERT_500.PNG)](https://www.youtube.com/watch?v=_pP7ClPGpsM)
-
->[Ver en YouTube](https://www.youtube.com/watch?v=_pP7ClPGpsM)
+>[Ver en YouTube](https://www.youtube.com/watch?v=jWXKS2jQCEc)
 
 
 ##
+
 
 ---
 
@@ -160,16 +151,16 @@ Entregables:
 ### 100 nodos (Variante del modelo Gn,d Barabási-Albert)
 **n = 30, d = 4, dirigido = False, auto=False**
 
-[![BARABASI_100](/img/BARABASI_100.PNG)](https://www.youtube.com/watch?v=CJa8EBXT3bs)
+[![BARABASI_100](/img/BARABASI_100.PNG)](https://www.youtube.com/watch?v=RDpQ_V8KAfk)
 
->[Ver en YouTube](https://www.youtube.com/watch?v=CJa8EBXT3bs)
+>[Ver en YouTube](https://www.youtube.com/watch?v=RDpQ_V8KAfk)
 
 ##
 
 ### 500 nodos (Variante del modelo Gn,d Barabási-Albert)
 **n = 500, d = 3, dirigido = False, auto=False**
 
-[![BARABASI_500](/img/BARABASI_500.PNG)](https://www.youtube.com/watch?v=p-gBZSHEjtU)
+[![BARABASI_500](/img/BARABASI_500.PNG)](https://www.youtube.com/watch?v=g2A535M5m1w)
 
 >[Ver en YouTube](https://www.youtube.com/watch?v=p-gBZSHEjtU)
 
