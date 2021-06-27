@@ -1,4 +1,4 @@
-# Proyecto 5 - Disposición de grafos - parte I
+# Proyecto 6 - Disposición de grafos - parte II
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
@@ -22,13 +22,13 @@
 
 ## Instrucciones
 
-Dado un grafo, y utilizando pygame, generar una visualización del mismo. Mediante dos métodos:
-- Spring: calcula la disposición de un grafo mediante el algoritmo de resortes presentado por P. Eades (1984). O(m+n)
+Dado un grafo, y utilizando pygame, generar una visualización del mismo. 
+- Force-directed: calcula la disposición de un grafo mediante el algoritmo de equilibrio de fuerzas de Fruchterman y Reigold (1991). O(n^2)
+- Mediante force-directed: utilizando la optimización de Barnes y Hut (1986). O(n log(n))
 
 Entregables:
 - Repositorio GIT
 - Capturas de pantalla (links a videos) con la ejecución del proyecto. Dos por cada modelo de generación, uno con 100 nodos y otro con 500.
-
 
 ---
 
