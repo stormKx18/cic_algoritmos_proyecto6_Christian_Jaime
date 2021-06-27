@@ -14,12 +14,12 @@ RED = (255,0,0)
 GREEN = (0,255,0)
 BLUE = (0,0,255)
 PURPLE = (116,1,113)
-FPS = 60
+FPS = 5
 CIRCLE_RADIUS=3
 c1=1.9 #2
 c2=0.01 #1
 c3=0.33 #1
-c4=0.1 #0.1
+c4=0.01 #0.1
 MIN_DIST=30
 #******************************************************************************
 #Clase Grafo
@@ -445,9 +445,9 @@ class Grafo:
         self.drawEdges(window) #Dibujar aristas
         self.drawVertex(window) #Dibjutar vertices
         pygame.display.update() #Update display
-        self.calculateSprings() #Calculate new position
+        self.calculateFruchtermanReginold() #Calculate new position
 
-    def calculateSprings(self):
+    def calculateFruchtermanReginold(self):
         for key, value in self.nodos.items():
 
             vecinos = self.nodos[value.id].vecinos
@@ -458,27 +458,28 @@ class Grafo:
             for key2, value2 in self.nodos.items():
                 if value.id==value2.id:
                     continue
+                #Repulsion force - Not adjacent nodes
+                d=math.sqrt((value2.coordenadas[0]-value.coordenadas[0])**2+(value2.coordenadas[1]-value.coordenadas[1])**2)
+                if d==0:
+                    continue
+                force= (d/abs(d))*(k**2)/d
+                #https://stackoverflow.com/questions/42258637/how-to-know-the-angle-between-two-vectors
+                radians = math.atan2(value2.coordenadas[1]-value.coordenadas[1], value2.coordenadas[0]-value.coordenadas[0])
+                fx-= force*math.cos(radians)
+                fy-=force*math.sin(radians)
+
                 if value2.id in vecinos:
                     #Attraction force - Adjacent nodes
                     d=math.sqrt((value2.coordenadas[0]-value.coordenadas[0])**2+(value2.coordenadas[1]-value.coordenadas[1])**2)
                     if d<MIN_DIST: #30
                         continue
 
-                    force= c1*math.log(d/c2)
+                    force= (d/abs(d))*(d**2)/k
                     #https://stackoverflow.com/questions/42258637/how-to-know-the-angle-between-two-vectors
                     radians = math.atan2(value2.coordenadas[1]-value.coordenadas[1], value2.coordenadas[0]-value.coordenadas[0])
                     fx+= force*math.cos(radians)
                     fy+=force*math.sin(radians)
-                else:
-                    #Repulsion force - Not adjacent nodes
-                    d=math.sqrt((value2.coordenadas[0]-value.coordenadas[0])**2+(value2.coordenadas[1]-value.coordenadas[1])**2)
-                    if d==0:
-                        continue
-                    force= c3/math.sqrt(d)
-                    #https://stackoverflow.com/questions/42258637/how-to-know-the-angle-between-two-vectors
-                    radians = math.atan2(value2.coordenadas[1]-value.coordenadas[1], value2.coordenadas[0]-value.coordenadas[0])
-                    fx-= force*math.cos(radians)
-                    fy-=force*math.sin(radians)
+
 
 
             value.coordenadas[0]+=c4*fx
@@ -493,10 +494,9 @@ class Grafo:
             '''
 
 
-
-    def playSpringAnimation(self,title):
+    def playFruchtermanReginold(self,title):
         #MAke our size and rows varibales global
-        global sizeX, sizeY, rows, cols, count, totalLines
+        global sizeX, sizeY, rows, cols, count, totalLines, area, k, Temperature
         sizeX=1200 #750
         sizeY=600 #500
         rows=20
@@ -507,6 +507,12 @@ class Grafo:
 
         play = True
         paused = False
+
+        C=1
+        Temperature=1
+        area = sizeX*sizeY
+        k=C*math.sqrt(area/self.totalNodos())
+
         #Main loop
         while play:
             clock.tick(FPS)
