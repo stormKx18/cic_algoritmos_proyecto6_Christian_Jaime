@@ -42,9 +42,9 @@ Entregables:
 ### 100 nodos (Modelo Gm,n de malla)
 **m = 10, n = 10, dirigido = False**
 
-[![GRAFO_MALLA_100](/img/GRAFO_MALLA_100.PNG)](https://www.youtube.com/watch?v=3XNFgLX7PIo)
+[![GRAFO_MALLA_100](/img/GRAFO_MALLA_100.PNG)](Grafo Malla con 100 nodos - Algoritmo Fruchterman-Reingold)
 
->[Ver en YouTube](https://www.youtube.com/watch?v=3XNFgLX7PIo)
+>[Ver en YouTube](Grafo Malla con 100 nodos - Algoritmo Fruchterman-Reingold)
 
 ##
 
