@@ -122,19 +122,9 @@ Entregables:
 **n = 100, r = 0.3, dirigido = False, auto=False**
 
 
-[![GEOGRAFICO_100](/img/GEOGRAFICO_100.PNG)](https://www.youtube.com/watch?v=OGbUKRpw1xY)
+[![GEOGRAFICO_100](/img/GEOGRAFICO_100.PNG)](https://www.youtube.com/watch?v=aL8Ht17KPKM)
 
->[Ver en YouTube](https://www.youtube.com/watch?v=OGbUKRpw1xY)
-
-##
-
-### 500 nodos (Modelo Gn,r Geográfico simple)
-**n = 500, r = 0.12, dirigido = False, auto=False**
-
-
-[![GEOGRAFICO_500](/img/GEOGRAFICO_500.PNG)](https://www.youtube.com/watch?v=GAs-RZikkjY)
-
->[Ver en YouTube](https://www.youtube.com/watch?v=GAs-RZikkjY)
+>[Ver en YouTube](https://www.youtube.com/watch?v=aL8Ht17KPKM)
 
 ##
 

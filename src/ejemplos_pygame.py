@@ -18,6 +18,7 @@ gfGeografico = grafoGeografico(n=100, r=0.3, dirigido=False, auto=False)
 gfGeografico.display()
 gfGeografico.playFruchtermanReginold("grafoGeografico 100 nodos")
 '''
+
 '''
 gfGeografico = grafoGeografico(n=500, r=0.12, dirigido=False, auto=False)
 gfGeografico.display()
@@ -66,13 +67,13 @@ gfGilbert.display()
 gfGilbert.playFruchtermanReginold("grafo Gilbert 100 nodos")
 '''
 '''
-#grafoGilbert - 100 nodos
+#grafoGilbert - 500 nodos
 gfGilbert = grafoGilbert(n=500, p=0.1, dirigido=False, auto=False)
 gfGilbert.display()
 gfGilbert.playFruchtermanReginold("grafo Gilbert 500 nodos")
 '''
-
 '''
+
 #grafoBarabasiAlbert - 100 nodos
 gfBarabasiAlbert = grafoBarabasiAlbert(n=100, d=4, dirigido=False, auto=False)
 gfBarabasiAlbert.display()
@@ -90,7 +91,7 @@ gfBarabasiAlbert.playFruchtermanReginold("grafo Barabási-Albert 500 nodos")
 '''
 
 '''
-#grafoBarabasiAlbert - 100 nodos
+#grafoDorogovtsevMendes - 100 nodos
 gfDorogovtsevMendes = grafoDorogovtsevMendes(100,dirigido=False)
 gfDorogovtsevMendes.display()
 gfDorogovtsevMendes.playFruchtermanReginold("grafo Dorogovtsev-Mendes 100 nodos")
